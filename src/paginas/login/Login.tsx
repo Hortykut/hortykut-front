@@ -40,8 +40,7 @@ function Login() {
         e.preventDefault();
         try {
             await login(`/usuarios/logar`, userLogin, setToken)
-
-            toast.success("Usuario logado com sucesso", {
+            toast.success('Usuario logado com sucesso', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -52,7 +51,7 @@ function Login() {
                 progress: undefined,
             });
         } catch (error) {
-            toast.error("Dados do usuário inconsistentes. Erro ao logar!", {
+            toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,

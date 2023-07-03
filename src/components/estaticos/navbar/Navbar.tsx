@@ -20,7 +20,7 @@ function Navbar() {
 
     function goLogout() {
         dispatch(addToken(''));
-        toast.error("Você precisa estar logado", {
+        toast.info('Usuario deslogado', {
             position: "top-right",
             autoClose: 2000,
             hideProgressBar: false,
