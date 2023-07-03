@@ -67,7 +67,7 @@ function CadastroCategoria() {
 
         if (id !== undefined) {
             console.log(categoria)
-            put(`/categoria`, categoria, setCategoria, {
+            put(`/categoria/${categoria.id}`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
@@ -94,7 +94,7 @@ function CadastroCategoria() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro categoria</Typography>
                 <TextField value={categoria.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Button type="submit" variant="contained" style={{background:"#ff7b00", color: "white"}}>
                     Finalizar
                 </Button>
             </form>

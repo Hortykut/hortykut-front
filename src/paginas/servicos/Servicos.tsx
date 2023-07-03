@@ -33,9 +33,10 @@ function Servicos() {
     return (
 
         <>
-            <Box>
-                <CardContent>
-                    <Card sx={{ maxWidth: 345 }} >
+        <Box className='caixaServico'>
+            <Box className='card1'>
+                <CardContent >
+                    <Card sx={{ maxWidth: 500}}style={{width: "450px"}} >
                         <CardActionArea onClick={handleOpen2}>
                             <CardMedia
                                 component="img"
@@ -73,9 +74,9 @@ function Servicos() {
                 </Modal>
             </Box>
 
-            <Box>
+            <Box className='card2'>
                 <CardContent>
-                    <Card sx={{ maxWidth: 345 }} >
+                    <Card sx={{ maxWidth: 500}}style={{width: "450px"}}>
                         <CardActionArea onClick={handleOpen}>
                             <CardMedia
                                 component="img"
@@ -112,6 +113,7 @@ function Servicos() {
                     </Box>
                 </Modal>
             </Box>
+        </Box>    
         </>
     );
 }

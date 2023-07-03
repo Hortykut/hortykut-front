@@ -93,7 +93,7 @@ function CadastroProdutos() {
         e.preventDefault()
 
         if (id !== undefined) {
-            put(`/produto`, produto, setProduto, {
+            put(`/produto/${produto.id}`, produto, setProduto, {
                 headers: {
                     'Authorization': token
                 }
@@ -161,7 +161,7 @@ function CadastroProdutos() {
                             }
                         </Select>
                         <FormHelperText>Escolha um tema para o produto</FormHelperText>
-                        <Button type="submit" variant="contained" style={{background:"#ff7b00", color:"white"}}>
+                        <Button type="submit" variant="contained" style={{background:"#ff7b00", color:"white" }} disabled={categoria.id===0} className='buttonCadastro'>
                             Finalizar
                         </Button>
                     </FormControl>

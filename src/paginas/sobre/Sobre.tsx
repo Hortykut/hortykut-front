@@ -60,7 +60,6 @@ function Sobre() {
                 </Grid>
                 <Grid item xs={6}>
                     <img src="src/assets/imagens/Farmer-amico.png" alt="Ilustração de um fazendeiro com uma caixa de maçãs nas mãos e galinhas ao solo." style={{ width: '700px' }} />
-                    <img src="src/assets/imagens/Farmer-amico.png" alt="Ilustração de uma mulher plantando, com torres de energia eólica ao fundo, e uma caixa com materiais recicláveis ao seu lado." style={{width: '1000px'}} />
                 </Grid>
             </Grid>
         </>
