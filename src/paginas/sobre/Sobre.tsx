@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import imgSobre from "../../assets/imagens/Farmer-amico.png";
 
 function Sobre() {
 
@@ -59,7 +60,7 @@ function Sobre() {
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
-                    <img src="src/assets/imagens/Farmer-amico.png" alt="Ilustração de um fazendeiro com uma caixa de maçãs nas mãos e galinhas ao solo." style={{ width:'1000px'}} />
+                    <img src={imgSobre} alt="Ilustração de um fazendeiro com uma caixa de maçãs nas mãos e galinhas ao solo." style={{ width:'1000px'}} />
                 </Grid>
             </Grid>
         </>
