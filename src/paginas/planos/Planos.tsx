@@ -13,6 +13,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import imgPlanos from "../../assets/imagens/Environment-amico.png";
 
 function Planos() {
 
@@ -45,7 +46,7 @@ function Planos() {
             </Typography>
             <Grid className='gridPlano'>
                 <Grid item xs={6}>
-                    <img src="src/assets/imagens/Environment-amico.png" alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{ width: '53em' }} />
+                    <img src={imgPlanos} alt="Ilustração de fazendeiro, vestido de camisa vermelha e com uma ferramenta na mão" style={{ width: '53em' }} />
                 </Grid>
                 <Grid className='cards'>
                     <Box mx={2} display="flex">
