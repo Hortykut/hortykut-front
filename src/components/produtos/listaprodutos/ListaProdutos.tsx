@@ -63,7 +63,7 @@ function ListaProdutos() {
                                         Produtos
                                     </Typography>
                                     <Typography variant="h5" component="h2">
-                                        {produto.produto}
+                                        {produto.titulo}
                                     </Typography>
                                     <Typography variant="body2" component="p">
                                         {produto.valor}
@@ -75,7 +75,7 @@ function ListaProdutos() {
                                         {produto.descricao}
                                     </Typography>
                                     <Typography variant="body2" component="p">
-                                        <img src={produto.foto} alt="" />
+                                        <img src={produto.foto} alt="" width={"345px"} height={"250px"}/>
                                     </Typography>
                                     <Typography variant="body2" component="p">
                                         {produto.categoria?.descricao}

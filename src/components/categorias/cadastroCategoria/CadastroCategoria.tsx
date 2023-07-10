@@ -63,7 +63,7 @@ function CadastroCategoria() {
 
         if (id !== undefined) {
             console.log(categoria)
-            put(`/categoria/${id}`, categoria, setCategoria, {
+            put(`/categoria`, categoria, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
